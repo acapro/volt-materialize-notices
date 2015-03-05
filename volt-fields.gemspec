@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.version       = version
   spec.authors       = ["Adam Cooper"]
   spec.email         = ["mail@adamcooper.de"]
-  spec.summary       = %q{Utilizes toasts for flash messages with customizable css classes.}
+  spec.summary       = %q{Utilizes toasts for flash messages with customizable css classes in Volt.}
   spec.homepage      = ""
   spec.license       = "MIT"
 

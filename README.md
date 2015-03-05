@@ -1,6 +1,6 @@
 # Volt::Flash-Notices for Materialize
 
-Utilizes toasts for flash messages with customizable css classes.
+Utilizes toasts for flash messages with customizable css classes in Volt.
 
 ## Installation
 
