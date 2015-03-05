@@ -1,0 +1,19 @@
+<:Body>
+  {{ if page._reloading }}
+    {{call_toast("Reloading...")}}
+  {{ end }}
+  {{ if channel.status == :reconnecting }}
+    {{call_toast("Connection Lost... Trying to reconnect.")}}
+  {{ end }}
+  {{ if page._reconnected }}
+    {{call_toast("Reconnected!")}}
+  {{ end }}
+  
+
+  {{ flash.keys.each do |key| }}
+    {{ if flash.send(:"_#{key}").present? }}
+      {{ flash.send(:"_#{key}").each do |notice| }}
+        {{call_toast(notice, map_key_class(key))}}
+      {{ end }}
+    {{ end }}
+  {{ end }}
