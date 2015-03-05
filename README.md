@@ -27,8 +27,11 @@ Replace `<:volt:notices />` inside `app/main/views/main/main.html` with:
 The toasts have a default look with a black background, however you can customize them depending on their status:
 
 `flash._successes << "Success Message"`  -> `.toast.success{background-color: green;}`
+
 `flash._warnings << "Warning Message"`  -> `.toast.warning{background-color: orange;}`
+
 `flash._errors << "Error Message"`  -> `.toast.error{background-color: red;}`
+
 `flash._notices << "Default Message"`  -> `.toast.default{background-color: black;}`
 
 The container style can be accessed through `#toast-container` which is good if you want to reposition it.  
