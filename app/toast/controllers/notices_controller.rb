@@ -4,7 +4,7 @@ module Toast
     end
     
     def call_toast(text, css_class)
-      `toast(text, 10000, css_class)`
+      `toast(text, 4000, css_class)`
     end
 
     def map_key_class(key)

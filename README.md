@@ -20,7 +20,7 @@ And then execute:
 
 Replace `<:volt:notices />` inside `app/main/views/main/main.html` with:
 
-    <:toasts:notices />
+    <:toast:notices />
 
 ### Customizable CSS
 
